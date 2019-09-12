@@ -23,3 +23,6 @@ Route::post('/search','searchcontroller@search');
 
 Route::get('/sort','searchcontroller@sort');
 Route::post('/sort','searchcontroller@sort');
+
+Route::get('/show','searchcontroller@show');
+Route::post('/show','searchcontroller@show');

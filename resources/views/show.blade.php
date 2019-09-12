@@ -1,6 +1,5 @@
 <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
-
-<form action="/search"method="post">
+<form action="/show"method="post">
     
     {{ csrf_field() }}
     <h3>Search By </h3>
@@ -12,14 +11,14 @@
     <input type="text" name="city"><br>
 
     <span class="form-control">OR  price Range </span>
-    <input type="number" name="first" >
+    <input type="number" name="priceone" >
     <span>And</span>
-    <input type="number" name="second"><br>
+    <input type="number" name="pricetwo"><br>
 
     <span class="form-control">OR  Availability Range </span>
-    <input type="date" name="f" >
+    <input type="date" name="dateone" >
     <span>And</span>
-    <input type="date" name="s"><br>
+    <input type="date" name="datetwo"><br>
     <input type="submit">
 </div>
 </form>
